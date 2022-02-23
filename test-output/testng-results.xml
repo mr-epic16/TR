@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="84652" started-at="2022-02-18T09:58:36Z" finished-at="2022-02-18T10:00:01Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="84652" started-at="2022-02-18T09:58:36Z" finished-at="2022-02-18T10:00:01Z">
+      <class name="amazon.ExecuteClass">
+        <test-method status="PASS" signature="amazon_relay(java.lang.String, java.lang.String)[pri:0, instance:amazon.ExecuteClass@2173f6d9]" name="amazon_relay" duration-ms="84636" started-at="2022-02-18T15:28:36Z" finished-at="2022-02-18T15:30:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mohanavelk@wowtruck.in]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wowtruck]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazon_relay -->
+      </class> <!-- amazon.ExecuteClass -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
