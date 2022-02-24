@@ -326,9 +326,7 @@ public class AmazonProduction extends Page {
 				int indexOf1 = set_pickup_address.lastIndexOf(last111);
 				String string2 = set_drop1_address.get(indexOf1);
 				if (!string2.equalsIgnoreCase(substring)) {
-					String last11 = set_pickup_address.getLast();
-					int indexOf = set_pickup_address.lastIndexOf(last11);
-					set_drop1_address.set(indexOf, substring);
+					set_drop1_address.set(indexOf1, substring);
 				}
 
 			} else if (string.startsWith("3")) {
@@ -337,9 +335,7 @@ public class AmazonProduction extends Page {
 				int indexOf1 = set_pickup_address.lastIndexOf(last111);
 				String string2 = set_drop2_address.get(indexOf1);
 				if (!string2.equalsIgnoreCase(substring)) {
-					String last11 = set_pickup_address.getLast();
-					int indexOf = set_pickup_address.lastIndexOf(last11);
-					set_drop2_address.set(indexOf, substring);
+					set_drop2_address.set(indexOf1, substring);
 				}
 
 			}
@@ -350,9 +346,7 @@ public class AmazonProduction extends Page {
 				int indexOf1 = set_pickup_address.lastIndexOf(last111);
 				String string2 = set_drop3_address.get(indexOf1);
 				if (!string2.equalsIgnoreCase(substring)) {
-					String last11 = set_pickup_address.getLast();
-					int indexOf = set_pickup_address.lastIndexOf(last11);
-					set_drop3_address.set(indexOf, substring);
+					set_drop3_address.set(indexOf1, substring);
 				}
 
 			} else if (string.startsWith("5")) {
@@ -361,9 +355,7 @@ public class AmazonProduction extends Page {
 				int indexOf1 = set_pickup_address.lastIndexOf(last111);
 				String string2 = set_drop4_address.get(indexOf1);
 				if (!string2.equalsIgnoreCase(substring)) {
-					String last11 = set_pickup_address.getLast();
-					int indexOf = set_pickup_address.lastIndexOf(last11);
-					set_drop4_address.set(indexOf, substring);
+					set_drop4_address.set(indexOf1, substring);
 				}
 
 			} else if (string.startsWith("6")) {
@@ -372,9 +364,7 @@ public class AmazonProduction extends Page {
 				int indexOf1 = set_pickup_address.lastIndexOf(last111);
 				String string2 = set_drop5_address.get(indexOf1);
 				if (!string2.equalsIgnoreCase(substring)) {
-					String last11 = set_pickup_address.getLast();
-					int indexOf = set_pickup_address.lastIndexOf(last11);
-					set_drop5_address.set(indexOf, substring);
+					set_drop5_address.set(indexOf1, substring);
 				}
 
 			}
@@ -448,12 +438,10 @@ public class AmazonProduction extends Page {
 				jo.put("customer_price", string7);
 				JSONArray tr = new JSONArray();
 				String string8 = set_TR_ID.get(j);
-				// jo.put("tr_number", string8);
 				tr.add(string8);
 				String string9 = set_TR_ID_Two.get(j);
 				if (string9 != "N/A") {
 					tr.add(string9);
-					// jo.put("tr_number2", string9);
 				}
 				jo.put("tr_number", tr);
 				String jsonString = jo.toString();

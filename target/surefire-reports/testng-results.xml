@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="126781" started-at="2022-02-23T10:23:00Z" finished-at="2022-02-23T10:25:06Z">
+  <suite name="Suite" duration-ms="206461" started-at="2022-02-24T09:18:38Z" finished-at="2022-02-24T09:22:05Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="126781" started-at="2022-02-23T10:23:00Z" finished-at="2022-02-23T10:25:06Z">
+    <test name="Test" duration-ms="206461" started-at="2022-02-24T09:18:38Z" finished-at="2022-02-24T09:22:05Z">
       <class name="amazon.ExecuteClass">
-        <test-method status="PASS" signature="amazon_relay(java.lang.String, java.lang.String)[pri:0, instance:amazon.ExecuteClass@22a67b4]" name="amazon_relay" duration-ms="126746" started-at="2022-02-23T10:23:00Z" finished-at="2022-02-23T10:25:06Z">
+        <test-method status="PASS" signature="amazon_relay(java.lang.String, java.lang.String)[pri:0, instance:amazon.ExecuteClass@22a67b4]" name="amazon_relay" duration-ms="206422" started-at="2022-02-24T09:18:38Z" finished-at="2022-02-24T09:22:05Z">
           <params>
             <param index="0">
               <value>
