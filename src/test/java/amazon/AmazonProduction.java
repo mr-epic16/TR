@@ -252,18 +252,23 @@ public class AmazonProduction extends Page {
 			WebElement tdata = get_allTruck.get(i11);
 			String length = tdata.getText();
 
-			if (length.equals("THIRTY_FOUR_FOOT_TRUCK")) {
+			if (length.equalsIgnoreCase("THIRTY_FOUR_FOOT_TRUCK")) {
 				String s = "34' Truck";
 				set_pickup_truck.add(s);
 
-			} else if (length.equals("THIRTY_TWO_FOOT_TRUCK")) {
+			} else if (length.equalsIgnoreCase("THIRTY_TWO_FOOT_TRUCK")) {
 				String s = "32' Truck";
+				set_pickup_truck.add(s);
+
+			} else if (length.equalsIgnoreCase("TWENTY_FOOT_TRUCK_CNG")) {
+				String s = "20' Truck";
 				set_pickup_truck.add(s);
 
 			} else {
 				set_pickup_truck.add(length);
 			}
 		}
+
 		System.out.println("Pickup Truck Size : " + set_pickup_truck.size());
 
 		/* Scraping TR Id From amazon relay */
@@ -392,6 +397,7 @@ public class AmazonProduction extends Page {
 				Map m = new LinkedHashMap();
 
 				JSONArray ja = new JSONArray();
+
 				m = new LinkedHashMap(1);
 				String string3 = set_drop1_address.get(j);
 				if (string3 != "N/A") {
