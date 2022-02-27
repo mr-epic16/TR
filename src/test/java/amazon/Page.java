@@ -242,6 +242,12 @@ public class Page extends Baseclass {
 	private List<WebElement> clickthird;
 	@FindBy(xpath = "//*[@class='wo-card-details']/div[4]/div/div/span/span")
 	private List<WebElement> clickfourth;
+	@FindBy(xpath = "//*[@class='wo-card-details']/div[5]/div/div/span/span")
+	private List<WebElement> clickfiveth;
+
+	public List<WebElement> getClickfiveth() {
+		return clickfiveth;
+	}
 
 	@FindBy(xpath = "//*[@class='wo-card-header']/div/div/div[4]/div/span/span/div[1]/span/div")
 	private List<WebElement> all_Truck;

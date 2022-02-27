@@ -231,6 +231,12 @@ public class AmazonProduction extends Page {
 			jsClick(webElement);
 
 		}
+		List<WebElement> clickfiveth = p.getClickfiveth();
+		for (int i = 0; i < clickfiveth.size(); i++) {
+			WebElement webElement = clickfiveth.get(i);
+			jsClick(webElement);
+
+		}
 
 		/* scraping all price amount from amazon relay */
 
@@ -262,6 +268,10 @@ public class AmazonProduction extends Page {
 
 			} else if (length.equalsIgnoreCase("TWENTY_FOOT_TRUCK_CNG")) {
 				String s = "20' Truck";
+				set_pickup_truck.add(s);
+
+			} else if (length.equalsIgnoreCase("FOURTEEN_FOOT_TRUCK_CNG")) {
+				String s = "14' Truck";
 				set_pickup_truck.add(s);
 
 			} else {
@@ -512,7 +522,7 @@ public class AmazonProduction extends Page {
 			}
 		}
 		FileOutputStream out = new FileOutputStream(
-				new File("./AmazonRelayExcelDataFolder/AmazonRelayBooking" + System.currentTimeMillis() + ".xlsx"));
+				new File(".//src/test//AmazonRelayBooking" + System.currentTimeMillis() + ".xlsx"));
 
 		workbook.write(out);
 		out.close();
